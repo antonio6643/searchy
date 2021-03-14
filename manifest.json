@@ -1,0 +1,26 @@
+{
+    "name" : "Searchy",
+    "version" : "0.0.1",
+    "description" : "Easily access the search bar of almost any website with a simple keybind.",
+    "permissions" : ["storage", "commands", "tabs"],
+    "commands" : {
+        "focus-search-bar" : {
+            "suggested_key" : {
+                "default" : "Ctrl+Shift+K",
+                "mac" : "Command+Shift+K"
+            },
+            "description" : "Select the search bar of whatever website you're on"
+        }
+    },
+    "background" : {
+        "scripts" : ["background.js"],
+        "persistent" : false
+    },
+    "content_scripts" : [
+        {
+            "js" : ["content.js"],
+            "matches" : ["<all_urls>"]
+        }
+    ],
+    "manifest_version" : 2
+}
