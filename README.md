@@ -1,4 +1,7 @@
 # Searchy
+A Chrome Extension that lets you easily select the search bar of almost any website using a simple keybind.
+
+Keybind: `Ctrl+Shift+K`
 
 # Supported Websites
 - [X] Google
