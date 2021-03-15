@@ -3,6 +3,8 @@ A Chrome Extension that lets you easily select the search bar of almost any webs
 
 Keybind: `Ctrl+Shift+K`
 
+The keybind can be changed at [chrome://extensions/shortcuts](chrome://extensions/shortcuts)
+
 # Supported Websites
 - [X] Google
 - [X] Google Drive
