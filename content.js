@@ -43,14 +43,11 @@ console.log("Content loaded")
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
 	if(request == "focus"){
-		console.log("Calling focus")
 		let Searchbar = FindSearchbar()
 		if(Searchbar){
 			Searchbar.focus()
 		} else { // Look for a search button
-			console.log("Searching for a button")
 			let SearchButton = FindSearchButton()
-			console.log(SearchButton)
 			if(SearchButton){
 				SearchButton.click()
 				let KnuSearchbar = FindSearchbar()
